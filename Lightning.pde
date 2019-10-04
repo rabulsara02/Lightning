@@ -8,14 +8,14 @@ void setup()
 {
   size(500,500);
   strokeWeight(3.5);
-  background(209,57,23);
+  background(15,15,15);
 }
 void draw()
 {
 	stroke(255);
 	// Creates the "lightning"
 	while(endX < 500){
-		stroke(255,255,0);
+		stroke((int)(Math.random() * 255),0,0);
 		endX = startX + (int)(Math.random() * 8 );
 		endY = startY + (int)(Math.random() * 19 - 9);
 		line(startX, startY, endX, endY);
